@@ -18,6 +18,9 @@ public class SnakeAndLadder {
 			else if(pos_result == 2){
 				System.out.println("Move ahead");
 				new_pos = position + dice_result;
+				if(new_pos>100) {
+					new_pos = position;
+				}
 			}
 			else if(pos_result == 3){
 				if(position != 0) {
